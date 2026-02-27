@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s){
+      if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;
+      s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)
+    }(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '273136652390155');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=273136652390155&ev=PageView&noscript=1" />
+  </noscript>
+  <!-- End Meta Pixel Code -->
+
+  <title>Your memory is full</title>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="notification" id="notification">
+    <div class="notificationTop">
+      <img src="settings.svg" alt="Settings" />
+      <div class="title">Your <span id="deviceName">device</span> memory is full</div>
+    </div>
+
+    <div class="message">
+      There is almost not enough available storage to take photos and videos,
+      download files, install and update apps. Clean up storage fast.
+    </div>
+
+    <div class="timer" id="timer">1 minute 30 seconds</div>
+
+    <div class="howto">How to clean storage:</div>
+    <div class="steps">
+      Step 1: Tap the "Clean Memory" button below <br />
+      Step 2: You will be redirected to the App Store <br />
+      Step 3: Install Cleaner MAX app and clean your <span id="deviceName2">device</span>
+    </div>
+
+    <a class="button cleanMemory"
+       href="https://apps.apple.com/by/app/cleaner-max-clean-photos/id6452720984">
+      Clean Memory
+    </a>
+  </div>
+
+  <script src="app.js" defer></script>
+</body>
+</html>

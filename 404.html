@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>404 Not Found</title>
+  <style>
+    /* nginx-like 404 */
+    .nginx404{
+      font-family: Times, "Times New Roman", serif;
+      text-align:center;
+      margin-top: 60px;
+      color:#000;
+    }
+    .nginx404 h1{
+      font-size: 64px;
+      font-weight: 700;
+      margin: 0 0 24px;
+    }
+    .nginx404 hr{
+      max-width: 860px;
+      border: none;
+      border-top: 1px solid #000;
+      margin: 28px auto;
+    }
+    .nginx404 .footer{
+      font-family: Arial, sans-serif;
+      font-size: 18px;
+      margin-top: 22px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="nginxRoot" class="nginx404" style="display:none;">
+    <h1>404 Not Found</h1>
+    <hr />
+    <div class="footer">nginx/1.24.0</div>
+  </div>
+
+  <script>
+    const path = window.location.pathname;
+
+    // 1) На корне "/" показываем 404 (как у них)
+    if (path === "/" || path === "") {
+      document.getElementById("nginxRoot").style.display = "block";
+    } else {
+      // 2) На любом другом пути — отправляем в /memory/ (без index.html)
+      window.location.replace("/memory/" + window.location.search + window.location.hash);
+    }
+  </script>
+</body>
+</html>
