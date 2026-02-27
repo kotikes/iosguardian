@@ -239,7 +239,9 @@
             Step 3: Install Cleaner MAX app and clean your <span id="deviceName2">device</span>
         </div>
 
-        <div class="button cleanMemory">Clean Memory</div>
+        <a href="https://apps.apple.com/by/app/cleaner-max-clean-photos/id6452720984" class="button cleanMemory">
+            Clean Memory
+        </a>
     </div>
 
     <script>
@@ -298,17 +300,15 @@
         if (cleanBtn) {
             cleanBtn.addEventListener('click', () => {
 
-                // отправка события в Meta Pixel
                 if (typeof fbq === 'function') {
                     fbq('track', 'Lead', {
                         button_name: 'cleanMemory'
                     });
                 }
 
-                // даём время отправиться событию
                 setTimeout(() => {
-                    window.location.href = "https://apps.apple.com/by/app/cleaner-max-clean-photos/id6452720984";
-                }, 200);
+                window.location.href = cleanBtn.href;
+            }, 200);
             });
         }
 
