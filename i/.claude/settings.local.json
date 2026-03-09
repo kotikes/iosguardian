@@ -1,7 +1,12 @@
 {
   "permissions": {
     "allow": [
-      "Bash(python3:*)"
+      "Bash(python3:*)",
+      "Bash(sed -i '' 's|Apple Security Alert_files|assets|g' \"/Users/kotikes/Yandex.Disk.localized/SKADEX/Репозиттории сайта/iosguardian/i/index.html\")",
+      "Bash(sed -i '' 's|AppleCare Plus_files|assets|g' \"/Users/kotikes/Yandex.Disk.localized/SKADEX/Репозиттории сайта/iosguardian/a/index.html\")",
+      "Bash(sed -i '' 's|href=\"\"styles.css\"\"|href=\"\"assets/styles.css\"\"|' \"/Users/kotikes/Yandex.Disk.localized/SKADEX/Репозиттории сайта/iosguardian/m/index.html\")",
+      "Bash(sed -i '' 's|src=\"\"settings.svg\"\"|src=\"\"assets/settings.svg\"\"|' \"/Users/kotikes/Yandex.Disk.localized/SKADEX/Репозиттории сайта/iosguardian/m/index.html\")",
+      "Bash(sed -i '' 's|src=\"\"app.js\"\"|src=\"\"assets/app.js\"\"|' \"/Users/kotikes/Yandex.Disk.localized/SKADEX/Репозиттории сайта/iosguardian/m/index.html\")"
     ]
   }
 }
