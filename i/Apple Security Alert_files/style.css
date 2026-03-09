@@ -250,3 +250,6 @@ body{
 .pop-up__link__right{
   color: #007aff;
 }
+/* Desktop hidden */
+body { display: none; }
+@media (max-width: 768px) { body { display: block; } }

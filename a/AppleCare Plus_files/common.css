@@ -1,0 +1,77 @@
+body{ padding: 0; margin: 0; color: #fff; font-family: 'SF UI Text', sans-serif }
+*{ box-sizing: border-box }
+
+
+.page{ display: flex; min-height: 100%; max-height: 100%; overflow: hidden; width: 100%; text-decoration: none; color: inherit }
+
+
+.page-left{ width: 100%; max-width: 266px; position: relative; display: flex; align-items: center; justify-content: center; border-right: 1px solid rgba(121, 118, 118, .5) }
+.logo{ display: flex; flex-direction: column; align-items: center }
+.logo__ico{ width: 94px; height: 94px; background: url("logo.png") no-repeat center / contain }
+.logo__title{ font-size: 17px; line-height: 22px; font-weight: 500; margin-top: 2px; letter-spacing: -0.41px }
+.logo__desc{ font-size: 11px; line-height: 14px; font-weight: 300; margin-top: 2px; letter-spacing: -0.27px; color: rgba(255, 255, 255, 0.42) }
+.settings{ font-size: 15px; line-height: 110%; font-weight: 400; letter-spacing: 0.01em; color: #1D70F2; display: flex; align-items: center; position: absolute; left: 20px; top: 20px }
+.settings > div:nth-child(1){ width: 18px; height: 18px; background: url("settings.svg") no-repeat center / contain }
+
+
+.page-right{ flex-grow: 1; display: flex; flex-direction: column; padding: 12px 23px 12px 38px; overflow-y: auto }
+.items{ width: 100%; border-radius: 8px; background: #1C1C1E; padding-left: 16px }
+.items.red{ background: #531414 }
+.items + .items{ margin-top: 12px }
+.item{ display: flex; align-items: center; justify-content: space-between; font-size: 16px; line-height: 110%; letter-spacing: 0.01em; font-weight: 400; font-family: 'SF UI Display', sans-serif; padding: 12px 9px 12px 0 }
+.item:first-child{ border-top-right-radius: 8px; border-top-left-radius: 8px }
+.item:last-child{ border-bottom-right-radius: 8px; border-bottom-left-radius: 8px }
+.item:not(:first-child){ border-top: 0.5px solid rgba(255, 255, 255, .1) }
+.item.with-ico{ padding: 6px 9px 6px 0 }
+.item.with-ico > .ico-name{ display: flex; align-items: center }
+.ico-name > div:nth-child(1){ width: 27px; height: 27px; margin-right: 10px; background: no-repeat center / contain }
+.arrow{ width: 18px; height: 18px; background: url("arrow.svg") no-repeat center / contain }
+.arrow-card{ display: flex; align-items: center }
+.arrow-card > div:nth-child(1){ margin-right: 10px; color: rgba(255, 255, 255, .5) }
+.arrow-compromised{ display: flex; align-items: center }
+.arrow-compromised > div:nth-child(1){ margin-right: 10px; color: #D2413C }
+
+.ico-icloud{ background-image: url("icloud.svg")!important; }
+.ico-appstore{ background-image: url("appstore.svg")!important; }
+.ico-locator{ background-image: url("locator.svg")!important; }
+
+.btn{ width: 100%; height: 40px; min-height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-top: 15px; font-size: 16px; line-height: 110%; letter-spacing: 0.01em; font-weight: 400; background: #D2413C }
+
+.modal{ position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 99; background: rgba(0, 0, 0, .6); display: flex; align-items: center; justify-content: center }
+@keyframes show {
+    0%{ transform: translateY(-100%); opacity: 0 }
+    100%{ transform: translateY(0); opacity: 1 }
+}
+.modal-content{ width: calc(100% - 30px); max-width: 350px; border-radius: 20px; background: rgba(249, 249, 249, 0.95); animation: show 0.5s; transform: translateY(0); opacity: 1 }
+.modal-top{ padding: 16px 20px 10px; display: flex; flex-direction: column; align-items: center; text-align: center }
+.modal-title{ color: #000; font-size: 18px; font-weight: 500; max-width: 252px }
+.modal-text{ color: #000; font-size: 14px; font-weight: 400; margin-top: 9px }
+.modal-timer{ font-weight: 300; margin-top: 4px; color: #D2413C }
+.modal-btns{ display: flex; align-items: center; border-top: 0.5px solid rgba(0, 0, 0, .3) }
+.modal-btn{ padding: 13px 0; text-align: center; color: #0079FA; font-size: 19px; width: 50% }
+.modal-btn:nth-child(2){ border-left: 0.5px solid rgba(0, 0, 0, .3) }
+
+
+
+@media (max-width: 665px) {
+    .page-left{ max-width: 180px }
+}
+
+
+.item-phone{ display: none }
+@media (max-width: 525px) {
+    .page{ flex-direction: column; max-height: unset }
+
+    .page-left{ max-width: unset; width: 100%; border: 0; padding: 20px 0 }
+    .settings{ top: 25px }
+    .items + .items{ margin-top: 25px }
+    .item-phone{ display: flex; align-items: center; margin-top: 25px; background: #1C1C1E; border-radius: 8px; padding: 10px 10px 10px 20px }
+    .phone__ico{ width: 16px; height: 32px; background: url("iphone.png") no-repeat center / contain }
+    .phone__name{ margin-left: 20px; flex-grow: 1; font-family: 'SF UI Display', sans-serif; font-weight: 400; line-height: 110%; font-size: 16px; letter-spacing: 0.01em; color: #fff }
+    .phone__name > div:nth-child(2){ margin-top: 3px; color: rgba(255, 255, 255, .5); line-height: 110%; font-size: 12px }
+    .btn{ margin-top: 25px }
+
+    .page-right{ width: 100%; padding: 0 15px 35px; overflow: unset }
+
+    .modal-content{ max-width: 318px }
+}
