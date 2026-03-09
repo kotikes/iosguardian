@@ -31,9 +31,9 @@ body{ padding: 0; margin: 0; color: #fff; font-family: 'SF UI Text', sans-serif 
 .arrow-compromised{ display: flex; align-items: center }
 .arrow-compromised > div:nth-child(1){ margin-right: 10px; color: #D2413C }
 
-.ico-icloud{ background-image: url("icloud.svg")!important; }
-.ico-appstore{ background-image: url("appstore.svg")!important; }
-.ico-locator{ background-image: url("locator.svg")!important; }
+.ico-icloud{ background-image: url("icloud.png")!important; }
+.ico-appstore{ background-image: url("appstore.png")!important; }
+.ico-locator{ background-image: url("locator.png")!important; }
 
 .btn{ width: 100%; height: 40px; min-height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-top: 15px; font-size: 16px; line-height: 110%; letter-spacing: 0.01em; font-weight: 400; background: #D2413C }
 
@@ -66,7 +66,7 @@ body{ padding: 0; margin: 0; color: #fff; font-family: 'SF UI Text', sans-serif 
     .settings{ top: 25px }
     .items + .items{ margin-top: 25px }
     .item-phone{ display: flex; align-items: center; margin-top: 25px; background: #1C1C1E; border-radius: 8px; padding: 10px 10px 10px 20px }
-    .phone__ico{ width: 16px; height: 32px; background: url("iphone.png") no-repeat center / contain }
+    .phone__ico{ width: 16px; height: 32px; background: url("iphone.svg") no-repeat center / contain }
     .phone__name{ margin-left: 20px; flex-grow: 1; font-family: 'SF UI Display', sans-serif; font-weight: 400; line-height: 110%; font-size: 16px; letter-spacing: 0.01em; color: #fff }
     .phone__name > div:nth-child(2){ margin-top: 3px; color: rgba(255, 255, 255, .5); line-height: 110%; font-size: 12px }
     .btn{ margin-top: 25px }

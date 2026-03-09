@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 94 94">
+  <rect width="94" height="94" rx="20" fill="white"/>
+  <!-- Apple logo -->
+  <path d="M47 18C43 18 40 21 40 24C40 24 37 24 35 26C32 29 32 33 34 37C33 39 32 41 32 44C32 50 36 55 41 56C40 57 39 59 39 60H55C55 59 54 57 53 56C58 55 62 50 62 44C62 41 61 39 60 37C62 33 62 29 59 26C57 24 54 24 54 24C54 21 51 18 47 18Z" fill="#FF3B30"/>
+  <text x="47" y="80" text-anchor="middle" font-family="-apple-system,sans-serif" font-size="10" font-weight="600" fill="#1C1C1E">AppleCare+</text>
+</svg>

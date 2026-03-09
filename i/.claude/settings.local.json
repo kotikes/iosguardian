@@ -6,7 +6,11 @@
       "Bash(sed -i '' 's|AppleCare Plus_files|assets|g' \"/Users/kotikes/Yandex.Disk.localized/SKADEX/Репозиттории сайта/iosguardian/a/index.html\")",
       "Bash(sed -i '' 's|href=\"\"styles.css\"\"|href=\"\"assets/styles.css\"\"|' \"/Users/kotikes/Yandex.Disk.localized/SKADEX/Репозиттории сайта/iosguardian/m/index.html\")",
       "Bash(sed -i '' 's|src=\"\"settings.svg\"\"|src=\"\"assets/settings.svg\"\"|' \"/Users/kotikes/Yandex.Disk.localized/SKADEX/Репозиттории сайта/iosguardian/m/index.html\")",
-      "Bash(sed -i '' 's|src=\"\"app.js\"\"|src=\"\"assets/app.js\"\"|' \"/Users/kotikes/Yandex.Disk.localized/SKADEX/Репозиттории сайта/iosguardian/m/index.html\")"
+      "Bash(sed -i '' 's|src=\"\"app.js\"\"|src=\"\"assets/app.js\"\"|' \"/Users/kotikes/Yandex.Disk.localized/SKADEX/Репозиттории сайта/iosguardian/m/index.html\")",
+      "Bash(curl -sL \"https://expercom.com/cdn/shop/files/AppleCarePlus_7c0204e6-422c-4399-9668-32ef67218dc2.png?v=1686758026\" -o \"/Users/kotikes/Yandex.Disk.localized/SKADEX/Репозиттории сайта/iosguardian/a/assets/logo.png\")",
+      "Bash(curl -sL \"https://static.wikia.nocookie.net/ipod/images/f/f1/ICloud.png\" -o \"/Users/kotikes/Yandex.Disk.localized/SKADEX/Репозиттории сайта/iosguardian/a/assets/icloud.png\")",
+      "Bash(curl -sL \"https://static.wikia.nocookie.net/ipod/images/b/b7/App_Store_26_icon.png\" -o \"/Users/kotikes/Yandex.Disk.localized/SKADEX/Репозиттории сайта/iosguardian/a/assets/appstore.png\")",
+      "Bash(curl -sL \"https://static.wikia.nocookie.net/ipod/images/e/e9/Find_My.png\" -o \"/Users/kotikes/Yandex.Disk.localized/SKADEX/Репозиттории сайта/iosguardian/a/assets/locator.png\")"
     ]
   }
 }
